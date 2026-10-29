@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-france-dvf",
-  "version": "0.1.0",
-  "description": "france-dvf — France's official property-transfer price records ('Demandes",
+  "version": "0.2.0",
+  "description": "france-dvf — France's official property-transfer price records ('Demandes de valeurs foncieres', DVF), published by the Direction generale des finances publiques (DGFiP) as a rolling five-year bulk release, refreshed twice a year (April/October). Fleet #2935.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-france-dvf": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "france-dvf"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-france-dvf.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/france-dvf",
   "pipeworx": {
-    "sourceHash": "v1-0f0f243b45f896883a80be17e74da34cbc7891b4639569c680502694caaafcd2",
-    "sourceCommit": "99f8642edbc00b72eee520fc7832dd864cf5ddfd"
+    "mode": "gateway",
+    "slug": "france-dvf",
+    "gatewaySlug": "france-dvf",
+    "sourceHash": "v1-cb3f0bf521d2ca3f5df0be7c467561bf2e16994e891b285007379bf7299f82ef",
+    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
   }
 }
