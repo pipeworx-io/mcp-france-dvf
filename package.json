@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-france-dvf",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "france-dvf — France's official property-transfer price records ('Demandes de valeurs foncieres', DVF), published by the Direction generale des finances publiques (DGFiP) as a rolling five-year bulk release, refreshed twice a year (April/October). Fleet #2935.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "france-dvf",
     "gatewaySlug": "france-dvf",
-    "sourceHash": "v1-cb3f0bf521d2ca3f5df0be7c467561bf2e16994e891b285007379bf7299f82ef",
-    "sourceCommit": "bb047243cf27f32453103de186b8e6a8b6a1ce79"
+    "sourceHash": "v1-8d677be488f5a8f51330639097160ee877452d6ed80b983e21bb0d4e0ff72e3c",
+    "sourceCommit": "030233f6b150a38a44421f88a5fcbad123f0fea8"
   }
 }

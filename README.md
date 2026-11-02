@@ -5,7 +5,7 @@ foncieres" (DVF), published by the Direction generale des finances publiques
 (DGFiP) — every recorded sale (and a handful of other transfer types) with
 price, commune, parcel, property type, surface and coordinates. Fleet #2935.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1856+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1865+ live data sources. This is an independent, unofficial integration — not affiliated with, endorsed by, or published by the upstream provider.
 
 DGFiP publishes DVF as a rolling five-year bulk release twice a year
 (April/October), not as an API, so Pipeworx keeps a copy refreshed on that
@@ -125,7 +125,7 @@ directly, instead of just this one's:
 }
 ```
 
-Both URLs reach the same gateway and the same 1856+ data sources. The
+Both URLs reach the same gateway and the same 1865+ data sources. The
 only difference is which pack's tools are listed **directly**; `ask_pipeworx`
 reaches all of them from either one.
 
